@@ -1,0 +1,1 @@
+(let ((p (array 2 3 4))) (setindex! p 1 p))

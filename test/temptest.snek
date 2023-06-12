@@ -1,0 +1,6 @@
+(let 
+    (
+        (x (array 2 1 (array 1 2)))
+    )
+    (setindex! x 1 (array 2 1 3))
+)

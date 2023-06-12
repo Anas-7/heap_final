@@ -1,0 +1,2 @@
+(let (p (array 2 4 5))
+  (array 2 p p))

@@ -1,0 +1,7 @@
+/target
+test/*.run
+runtime/*.o
+runtime/*.a
+test/*.s
+test/*.o
+test/*dSYM

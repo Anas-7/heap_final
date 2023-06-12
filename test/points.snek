@@ -1,0 +1,8 @@
+
+(fun (sum arr)
+  (+ (index arr 0) (index arr 1)))
+
+(fun (createvec p q)
+  (array 2 p q) )
+
+(sum (let ((x 5) (y 10)) (createvec x y)))

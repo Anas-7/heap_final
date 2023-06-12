@@ -1,0 +1,33 @@
+(fun (bstinsert tree value)
+  (if (= tree nil) (array 3 nil value nil)
+    (let ( (left (index tree 0)) (right (index tree 2)) )
+      (if (< value (index tree 1))
+        (setindex! tree 0 (bstinsert left value))
+        (setindex! tree 2 (bstinsert right value))
+      )
+    )
+  )
+)
+
+(fun (bstsearch tree value)
+  (if (= tree nil) false
+    (let ( (root (index tree 1)) )
+      (if (= value root)
+        true
+        (if (< value root)
+          (bstsearch (index tree 0) value)
+          (bstsearch (index tree 2) value)
+        )
+      )
+    )
+  )
+)
+
+(let ((tree nil))
+  (block
+    (set! tree (bstinsert tree 5))
+    (print tree)
+    (print (bstsearch tree 5))
+    (print (bstsearch tree 6))
+  )
+)

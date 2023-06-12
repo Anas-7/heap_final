@@ -1,0 +1,1 @@
+(let ((p (array 2 3 4))) (let ((q (array 2 3 4))) (block (setindex! p 1 p) (setindex! q 0 q) (=== p q))))

@@ -1,0 +1,1 @@
+(setindex! (array 2 3 4) 0 (array 4 1 2 7 8))

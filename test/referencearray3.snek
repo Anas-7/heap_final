@@ -1,0 +1,1 @@
+(let ((p (array 2 1 2))) (let ((q (array 2 1 2))) (== q p)))
